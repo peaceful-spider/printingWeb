@@ -1,0 +1,349 @@
+body{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+/*image slide css*/
+
+.main_container{
+  width:100%;
+  height:600px;
+  background-image:url(../media/images/nav_logo.png);
+  background-repeat:no-repeat;
+  background-size:100% 50%;
+  background-attachment:fixed;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+/* navigation bar css */
+
+.main_container2{
+  width:100%;
+  height:100px;
+  background-color:rgba(247, 240, 240, 0.2);
+  box-shadow:8px 2px 10px black;
+  position:absolute;
+  top:400px;
+  z-index:;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.logo1 img{
+  width:80px;
+  height:80px;
+  border-radius:50%;    
+  background-color:green;
+}
+
+.logo1 img:hover{
+  border-radius:50%;
+  transition:0.5s;
+  transform:translateY(-10px)
+}
+
+/* book mark manu */
+
+div.bookmark_menu{
+  background-color:#333;
+  overflow:auto;
+  white-space:nowrap;
+}
+
+div.bookmark_menu a{
+  display:inline-block;
+  color:white;
+  text-align:center;
+  padding:14px;
+  text-decoration:none;
+}
+
+div.bookmark_menu a:hover{
+  background-color:#777;
+}
+/* side categry nav bar */
+
+#mySidenav a {
+  position: absolute;
+  left: -90px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+@media(max-width:600px){
+  #mySidenav a{
+  position: absolute;
+  left: -60px;
+  z-index:10;
+  width:40px;
+  font-size: 9px;
+ }
+}
+#mySidenav a:hover {
+  left: 0;
+}
+
+#marketing {
+  top: 700px;
+  background-color: #04AA6D;
+}
+
+#promotional {
+  top: 760px;
+  background-color: #2196F3;
+}
+
+#officestationaries {
+  top: 800px;
+  background-color: #f44336;
+}
+
+#Invitation {
+  top: 860px;
+  background-color: #555
+}
+
+	
+/* marketing material and advertising */
+
+.broucher_flyer_main_container {
+  position: relative;
+  width:70%;
+  left:15%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+
+/* buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+brouchers_flyers_menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.brouchers_flyers_menu_column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* posters */
+
+.posters_heading{
+  text-align:center;
+}
+
+div.posters-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width:70%;
+  position:relative;
+  left:15%;
+}
+
+div.posters-container img {
+  padding: 10px;
+  width:400px;
+}
+
+/* logos and stickers */
+
+.logos_stickers_main_div{
+  width:80%;
+  display:flex;
+  position:relative;
+  left:15%;
+  flex-wrap:wrap;
+  gap:5px;
+}
+
+.logos_stickers_main_div img{
+  width:200px;
+  height:auto;
+    opacity:0.5;
+}
+
+.logos_stickers_main_div img:hover{
+  opacity:1;
+  border-radius:20px;
+  transition:0.5s;
+  box-shadow:3px 5px 17px black;
+}
+
+
+@media(max-width:600px){
+  
+.logos_stickers_main_div{
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap:no-wrap;
+ }
+}
+
+@media(max-width:600px){
+  
+.logos_stickers_main_div img{
+  width:70px;
+ }
+}
+
+/* roll up stand */
+
+.rolupstand_container{
+  width:70%;
+  display:flex;
+  position:relative;
+  left:15%;
+  padding:38px;
+}
+
+.rolupstand_container img{
+  width:30%;
+  height:auto;
+}
+
+#rollupstands h1{
+  text-align:center;
+}
+
+/* catalogues and canlenders */
+
+div.catalogues_calenders_container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.catalogues_calenders_container img {
+  padding: 10px;
+}
+
+.ctlgs_clnds_title{
+  text-align:center;
+}
+
+/* footer */
+
+.footer_main_container{
+  background-color:black;
+  width:100%;
+  height:200px;
+  position:relative;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+@media(max-width:817px){
+  .footer_main_container{
+  height:auto;
+ }
+}
+
+.footer_logo{
+ width:250px;
+ height:auto;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-wrap:wrap;	
+}
+
+@media(max-width:817px){
+  .footer_logo{
+   height:100px;
+ }
+}
+
+.footer_logo a{
+  text-decoration:none;
+  color:white;
+  font-size:25px;
+  font-family:chiller;
+}
+
+.footer_logo a:hover{
+  border:1px solid dotted black;
+  font-size:25px;
+  color:black;
+  background-color:white;
+  border-radius:10px;
+  transition:0.7s;
+}
